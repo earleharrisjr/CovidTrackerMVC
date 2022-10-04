@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CovidTrackingMVC.Models.CovidDataModel>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css">
+<script src="extensions/filter-control/bootstrap-table-filter-control.js"></script>
+
+
+@{
+    ViewData["Covid Tracking Home Page"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Covid Tracking via information provided on https://covidtracking.com/</p>
+</div>
+
+
+<div>
+    <p>Please enter the two letter abbreviation for the state you wish to search</p>
+      <table id="table" data-toggle="table" data-sort-name="Positive" data-sort-order="desc" data-search="true">
+            <thead>
+                <tr>
+                    <th  data-field="State" data-filter-control="select" data-searchable="true">@Html.DisplayNameFor(model => model.State)</th>
+                    <th>@Html.DisplayNameFor(model => model.Date)</th>
+                    <th>@Html.DisplayNameFor(model => model.Total)</th>
+                    <th data-field="Positive" data-sortable="true">@Html.DisplayNameFor(model => model.Positive)</th>
+                    <th>@Html.DisplayNameFor(model => model.Negative)</th>
+                    <th>@Html.DisplayNameFor(model => model.Hospitalized)</th>              
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.State)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Total)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Positive)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Negative)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Hospitalized)</td>
+                    </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+
+                        <script>
+$('#sortTable').DataTable();
+
+</script>
+
+                        <script>
+  $(function() {
+    $('#table').bootstrapTable()
+  })
+</script>
