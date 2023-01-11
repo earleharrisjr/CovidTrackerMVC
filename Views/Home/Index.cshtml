@@ -11,7 +11,7 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Covid Tracking via information provided by the  <a href="https://covidtracking.com/">Covid Tracking</a> website </P
+    <p>Covid Tracking via information provided by the  <a href="https://covidtracking.com/">Covid Tracking</a> website </P>
 </div>
 
 
@@ -33,7 +33,7 @@
                 {
                     <tr>
                         <td>@Html.DisplayFor(modelItem => item.State)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                        <td>@Html.DisplayFor(modelItem => item.FormattedDate)</td>
                         <td>@Html.DisplayFor(modelItem => item.Total)</td>
                         <td>@Html.DisplayFor(modelItem => item.Positive)</td>
                         <td>@Html.DisplayFor(modelItem => item.Negative)</td>
@@ -43,3 +43,5 @@
             </tbody>
         </table>
     </div>
+
+

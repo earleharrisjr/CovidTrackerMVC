@@ -5641,11 +5641,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eehar\\Desktop\\CovidTrackerMVC\\CovidTrackingMVC\\CovidTrackingMVC.csproj",
+      "projectUniqueName": "C:\\Users\\eehar\\Desktop\\Projects\\SETWorks\\CovidTrackerMVC\\CovidTrackingMVC\\CovidTrackingMVC.csproj",
       "projectName": "CovidTrackingMVC",
-      "projectPath": "C:\\Users\\eehar\\Desktop\\CovidTrackerMVC\\CovidTrackingMVC\\CovidTrackingMVC.csproj",
+      "projectPath": "C:\\Users\\eehar\\Desktop\\Projects\\SETWorks\\CovidTrackerMVC\\CovidTrackingMVC\\CovidTrackingMVC.csproj",
       "packagesPath": "C:\\Users\\eehar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eehar\\Desktop\\CovidTrackerMVC\\CovidTrackingMVC\\obj\\",
+      "outputPath": "C:\\Users\\eehar\\Desktop\\Projects\\SETWorks\\CovidTrackerMVC\\CovidTrackingMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"

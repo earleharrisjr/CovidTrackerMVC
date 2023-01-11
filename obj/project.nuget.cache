@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IK0YCCxM06tr4XDNCJUVtJPOlj06EpgMY2KVzOC3fBiFT/sKQ12+p7OaY9KD3ljTffnaeAqGfD/3ba0KPx+4BQ==",
+  "dgSpecHash": "toCxoiCKoEfjeU2EOYpX9EPWx12nco1SKrbIuDLsfHGRoh9h2Uk9LKpjZZvUcfOXqCuGRqWbm3lGU8Zb644aWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\eehar\\Desktop\\CovidTrackerMVC\\CovidTrackingMVC\\CovidTrackingMVC.csproj",
+  "projectFilePath": "C:\\Users\\eehar\\Desktop\\Projects\\SETWorks\\CovidTrackerMVC\\CovidTrackingMVC\\CovidTrackingMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eehar\\.nuget\\packages\\bootstrap\\5.2.1\\bootstrap.5.2.1.nupkg.sha512",
     "C:\\Users\\eehar\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512",

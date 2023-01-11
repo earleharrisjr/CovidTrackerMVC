@@ -2,7 +2,8 @@
 using System.Globalization;
 
 namespace CovidTrackingMVC.Models
-{    public class CovidDataModel
+{
+    public class CovidDataModel
     {
         public int Date { get; set; }
         public string State { get; set; }
@@ -11,19 +12,16 @@ namespace CovidTrackingMVC.Models
         public int? Hospitalized { get; set; }
         public int Total { get; set; }
 
-
-        public static void convertDate(int[] args)
+        public string FormattedDate
         {
-        CovidDataModel c = new CovidDataModel();
-        int date = c.Date;
-        int year = date / 10_000;
-        int month = (date - year * 10_000) / 100;
-        int day = date % 100;
-        DateTime dateTime = new DateTime(year, month, day);
-            Console.WriteLine(dateTime.ToString());
-        }
-
-}
+            get
+            {
+                int year = Date / 10000;
+                int month = (Date % 10000) / 100;
+                int day = Date % 100;
+                return string.Format("{0}-{1:D2}-{2:D2}", month, day, year);
+            } }
+    }
 
 
 }
