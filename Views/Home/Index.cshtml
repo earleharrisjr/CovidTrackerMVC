@@ -22,10 +22,10 @@
                 <tr>
                     <th  data-field="State" data-filter-control="select" data-searchable="true">@Html.DisplayNameFor(model => model.State)</th>
                     <th>@Html.DisplayNameFor(model => model.Date)</th>
-                    <th>@Html.DisplayNameFor(model => model.Total)</th>
+                    <th data-sortable="true" >@Html.DisplayNameFor(model => model.Total)</th>
                     <th data-field="Positive" data-sortable="true">@Html.DisplayNameFor(model => model.Positive)</th>
-                    <th>@Html.DisplayNameFor(model => model.Negative)</th>
-                    <th>@Html.DisplayNameFor(model => model.Hospitalized)</th>              
+                    <th data-sortable="true">@Html.DisplayNameFor(model => model.Negative)</th>
+                    <th data-sortable="true">@Html.DisplayNameFor(model => model.Hospitalized)</th>              
                 </tr>
             </thead>
             <tbody>
